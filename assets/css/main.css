@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -121,7 +115,21 @@ input, select, textarea {
 
 	.grid 
 	{ 
-		display: grid; grid-template-columns: auto auto; 
+		display: grid;
+		grid-template-columns: auto auto auto;
+		padding: 10px;
+	}
+	.grid-item 
+	{
+		background-color: transparent;
+		border: 1px transparent rgba(0, 0, 0, 0.8);
+		padding: 5px;
+		font-size: 15px;
+		text-align: center;
+	}
+	.models
+	{
+		display: block;
 	}
 	body {
 		background-color: #935d8c;
@@ -203,6 +211,7 @@ input, select, textarea {
 		margin: 0 0 0.7em 0;
 		letter-spacing: -0.025em;
 	}
+	
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
@@ -1963,7 +1972,7 @@ input, select, textarea {
 		.button.primary {
 			background-color: #8cc9f0;
 			color: #ffffff !important;
-			box-shadow: none;
+			box-shadow: black;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2715,7 +2724,6 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
 	}
-
 	table {
 		margin: 0 0 2em 0;
 		width: 100%;
@@ -3338,7 +3346,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: #282828;
 		color: #636363;
 		border-radius: 0.25em;
 	}

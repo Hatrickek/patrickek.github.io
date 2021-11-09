@@ -7,8 +7,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
-
+	<body class="is-preload" onload="start()">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -22,21 +21,35 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<ul class="actions special">
-							<li><a href="generic.html" class="button">Models</a></li>
-							<li><a href="generic.html" class="button">Apps</a></li>
-							<li><a href="#cta" class="button">Contact</a></li>
-						</ul>
+						<div class="main">
+
+							<ul class="actions special">
+								<li><a href="#intro"class="button" onclick="HideShowModels()">Models</a></li>
+								<li><a href="#intro" class="button" onclick="HideShowApps()">Apps</a></li>
+								<li><a href="#cta" class="button">Contact</a></li>
+							</ul>
+						</div>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<div class="grid"> <div>Cell</div> <div>Cell</div> Cell</div>
-										</ul>
+							<section id="intro" class="main special">
+								<div class="models" id="models">
+									<l>Some of the models I have made so far.</l>
+									<div class="grid" > 
+										<div class="grid-item"><img src="images/testlogo.png" alt=""></div> 
+										<div class="grid-item"><img src="images/testlogo.png" alt=""></div> 
+										<div class="grid-item"><img src="images/testlogo.png" alt=""></div> 
+										<div class="grid-item"><img src="images/testlogo.png" alt=""></div> 
+										<div class="grid-item"><img src="images/testlogo.png" alt=""></div> 
+										<div class="grid-item"><img src="images/testlogo.png" alt=""></div> 
+									</div>
+								</div>
+								<div class="apps" id="apps">
+									<l>I'll add the apps I made here later.</l>
+									<div class="grid"> 
+										<div class="grid-item"><img src="images/testlogo.png" alt=""></div> 
 									</div>
 								</div>
 							</section>
@@ -56,10 +69,9 @@
 							<ul class="icons">
 								<div class="center">
 									<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+									<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
 									<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 								</div>
 							</ul>
 						</section>
@@ -79,4 +91,32 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	<script>
+		function start()
+		{
+			var x = document.getElementById("apps");
+			x.style.display = "none";
+		}
+		function HideShowModels()
+		{
+		  var x = document.getElementById("models");
+		  var x2 = document.getElementById("apps");
+		  if (x.style.display === "none") 
+		  {
+			x.style.display = "block";
+			x2.style.display = "none";
+		  }
+		}
+		function HideShowApps()
+		{
+		  var x = document.getElementById("apps");
+		  var x2 = document.getElementById("models");
+		  if (x.style.display === "none") 
+		  {
+			x.style.display = "block";
+			x2.style.display = "none";
+		  }
+		  
+		}
+		</script>
 </html>
