@@ -114,22 +114,26 @@ input, select, textarea {
 /* Type */
 
 	.grid 
-	{ 
+	{
+		width: 1000px;
+		margin: auto;
 		display: grid;
-		grid-template-columns: auto auto auto;
-		padding: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
 	.grid-item 
 	{
+		padding: 5px;
 		background-color: transparent;
 		border: 1px transparent rgba(0, 0, 0, 0.8);
-		padding: 5px;
 		font-size: 15px;
 		text-align: center;
 	}
 	.models
 	{
+		width: auto;
+		margin: auto;
 		display: block;
+
 	}
 	body {
 		background-color: #935d8c;
@@ -2649,12 +2653,16 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	header.major2 h2
+	{
+		font-size: 2em;
+	}
 	header.major {
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 	}
 
 		header.major h2 {
-			font-size: 2em;
+			font-size: 1.8em;
 		}
 
 			header.major h2:after {
@@ -3230,7 +3238,7 @@ input, select, textarea {
 		background-color: #1B1B1E;
 		color: #636363;
 		position: absolute;
-		width: 64em;
+		width: 90em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #1B1B1E;
@@ -3347,7 +3355,7 @@ input, select, textarea {
 
 	#main {
 		background-color: #282828;
-		color: #636363;
+		color: #d4d4d4;
 		border-radius: 0.25em;
 	}
 
@@ -3364,7 +3372,7 @@ input, select, textarea {
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #d4d4d4;
 		}
 
 		#main blockquote {
@@ -3775,7 +3783,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		width: 64em;
+		width: 90em;
 		max-width: calc(100% - 4em);
 		margin: 0 auto;
 	}
