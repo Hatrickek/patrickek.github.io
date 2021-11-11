@@ -115,10 +115,10 @@ input, select, textarea {
 
 	.grid 
 	{
-		width: 1000px;
+		width: auto;
 		margin: auto;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	}
 	.grid-item 
 	{
