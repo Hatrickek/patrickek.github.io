@@ -113,34 +113,37 @@ input, select, textarea {
 
 /* Type */
 
-	.grid
+	.row
 	{
-		grid-template-rows: repeat(2, 500px);
-		display: inherit;
-		justify-content: space-evenly;
-		justify-items: center;
-		row-gap: 50px;
-		display: grid;
-		grid-auto-flow: column;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 4px;
+		justify-content: center;
 	}
-	.home-grid
+	.column
 	{
-		grid-template-rows: repeat(1, 500px);
-		display: inherit;
-		justify-content: space-evenly;
-		justify-items: center;
-		row-gap: 50px;
-		display: grid;
-		grid-auto-flow: column;
+		flex: 50%;
+		padding: 4px;
 	}
-	.grid-item 
+	.item
 	{
-		position: relative;
-		padding: 5px;
-		background: none;
-		border: 1px transparent rgba(0, 0, 0, 0.8);
-		font-size: 0px;
+		margin-top: 8px;
+		vertical-align: middle;
+	}
+	.item img
+	{
+		width: 300px;
+		height: 300px;
+	}
+	.item p
+	{
 		text-align: center;
+		
+	}
+	.column img
+	{
+		margin-top: 8px;
+		vertical-align: middle;
 	}
 	.models
 	{
@@ -1896,7 +1899,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-radius: 12px;
+		border-radius: 5px;
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
@@ -2702,7 +2705,7 @@ input, select, textarea {
 	}
 
 		header.major h2 {
-			font-size: 1.8em;
+			font-size: 1.7em;
 		}
 
 			header.major h2:after {
@@ -3318,7 +3321,7 @@ input, select, textarea {
 		}
 
 		#nav + #main {
-			padding-top: 4.25em;
+			padding-top: 2.25em;
 		}
 
 		#nav ul {
