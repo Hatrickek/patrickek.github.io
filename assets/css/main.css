@@ -392,11 +392,12 @@ input, select, textarea {
 
 /* Row */
 
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-		box-sizing: border-box;
-		align-items: stretch;
+	.row
+	{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 4px;
+	justify-content: center;
 	}
 
 		.row > * {
