@@ -394,10 +394,10 @@ input, select, textarea {
 
 	.row
 	{
-	display: flex;
-	flex-wrap: wrap;
-	padding: 4px;
-	justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 4px;
+		justify-content: center;
 	}
 
 		.row > * {
