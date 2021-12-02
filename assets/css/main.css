@@ -129,10 +129,20 @@ input, select, textarea {
 		margin-top: 8px;
 		vertical-align: middle;
 	}
+	.item-custom
+	{
+		margin-top: 8px;
+		vertical-align: middle;
+	}
+	.item-custom p
+	{
+		text-align: center;
+		font-size: larger;
+	}
 	.item img
 	{
-		width: 300px;
-		height: 300px;
+		width: 400px;
+		height: 400px;
 	}
 	.item p
 	{
