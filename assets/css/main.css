@@ -139,11 +139,6 @@ input, select, textarea {
 		text-align: center;
 		font-size: larger;
 	}
-	.item img
-	{
-		width: 400px;
-		height: 400px;
-	}
 	.item p
 	{
 		text-align: center;
